@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    font-family: 'Cedarville Cursive', cursive;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+body {
+    font-size: 16px;
+    min-width: 320px; /* Prevent the website from becoming too narrow */
+  }
+.container{
+   
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+
+}
+ 
+.leftside {
+    height:100vh ;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+  }
+
+.lhead{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    
+}
+.lhead img{
+    height: 52px;
+    width: 54px;
+    border-radius: 25px;
+    margin: 21px;
+    padding: 4px;
+}
+.lhead h1{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Recursive', sans-serif;
+    font-size: 1.2rem;
+}
+.lhead:hover{
+   transition: all 1s;
+   border: 2px solid red;
+   border-radius: 0.5px;
+}
+.lmid ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 74px; */
+    margin-left: 15px;
+}
+.lmid ul button{
+   gap: 10px;
+    border: none;
+    height: 43px;
+    width: 188px;
+    margin-top: 3px;
+}
+.lmid ul button:hover{
+
+    background-color: rgba(255, 255, 255, 0.411)
+}
+.lmid ul li{
+    padding: 10px;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.lmid ul li:hover{
+    transition: all 1s;
+     border-radius: 22px;
+    border: 3px solid rgb(73, 22, 124);
+}
+.lmid ul li img{
+    height: 25px;
+    width: 25px;
+    border-radius: 12px;
+}
+.lfoot ul{
+  margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    
+}
+.lfoot ul button{
+   
+   gap: 10px;
+    border: none;
+    height: 43px;
+    width: 188px;
+    margin-top: 200px;
+}
+.lfoot ul button:hover{
+
+    background-color: rgba(255, 255, 255, 0.411)
+}
+.lfoot ul li{
+    padding: 10px;
+    gap: 37px;
+    display: flex;
+    align-items: center;
+}
+
+.lfoot ul li:hover{
+    transition: all 1s;
+    background-color: #ff0000bf;
+    color: white;
+    border-radius: 22px;
+    border: 3px solid azure;
+}
+.lfoot ul li img{
+    height: 25px;
+    width: 25px;
+    border-radius: 12px;
+}
+.rightside {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 15px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 5; }
+.div2 { grid-area: 2 / 1 / 4 / 3; }
+.div3 { grid-area: 2 / 3 / 4 / 5; }
+.div4 { grid-area: 4 / 1 /  4/ 5; }
+
+
+    .div1 h1{
+        font-size: 3.2rem;
+        padding: 47px;
+    }
+    .div4 h1{
+        font-size: 3.2rem;
+        padding: 47px;
+    }
